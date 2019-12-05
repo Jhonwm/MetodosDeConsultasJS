@@ -1,5 +1,5 @@
+//Metodo Usando Fetch para la consulta
 const getNombre = (idPost) => {
-
    
     fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}`)
     .then(res => {
@@ -17,9 +17,10 @@ const getNombre = (idPost) => {
     })
 
 }
-
 getNombre(80);
 
+
+//En el siguiente metodo simplificamos el primer Bloque de Codigo utilizando Async Await
 
 const getNombreAsync = async (idPost) => {
 
@@ -38,6 +39,8 @@ const getNombreAsync = async (idPost) => {
 getNombreAsync(80);
 
 
+//Acontinuacion Simplificamos aun mas el 2do bloque de Codigo, utilizando la libreria
+//Axios, la cual declaramos en el index.html
 const getNombreAxios = async (idPost) => {
 
     try {
